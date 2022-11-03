@@ -8,7 +8,6 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 app.use(express.static("public"));
 
-
 app.post("/", function(req, res){
     const query = req.body.cityName;
     const apiKey = "your appid";
